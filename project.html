@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이진희 | 웹포트폴리오</title>  
+  <!-- 기존 커스텀 스타일 -->
+  <link rel="stylesheet" href="./style/project.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+<body>
+<header>
+    <div class="logo"><a href="./main.html"></a></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./main.html">HOME</a></li>
+            <li><a href="./main.html#sec3" class="scroll-btn">ABOUT ME</a></li>
+            <li><a href="./main.html#sec5" class="scroll-btn">PROJECT</a></li>
+            <li><a href="./main.html#sec6" class="scroll-btn">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="project-wrap">
+    <nav class="project-nav">
+        <ul class="font_b">
+            <li><a href="#project_sec1">PUBLISHING</a></li>
+            <li><a href="#project_sec2">BANNER</a></li>
+            <li><a href="#project_sec3">CARD NEWS</a></li>
+            <li><a href="#project_sec4">ADOBE WORK</a></li>
+        </ul>
+    </nav>
+    <div class="project_secwrap">
+        <section id="project_sec1" class="pro_sec">
+            <h1 class="pro_title font_b">Web Publishing</h1>
+            <div class="pro_sec1_boxes">
+                <div class="pro_sec1_box pro_sec1_box1">
+                    <div class="pro_sec1_box_img"><a href="https://leejinhee1106.github.io/antenna_html/"></a></div>
+                    <div class="pro_sec1_box_text">안테나 뮤직 사이트 리뉴얼</div>
+                    <div class="pro_sec1_box_subtext">WEB | 퍼블리싱 · HTML5 · 반응형</div>
+                </div>
+                <div class="pro_sec1_box pro_sec1_box2">
+                    <div class="pro_sec1_box_img"><a href=""></a></div>
+                    <div class="pro_sec1_box_text">미드림성형외과 사이트 리뉴얼</div>
+                    <div class="pro_sec1_box_subtext">WEB | 퍼블리싱 · VUETIFY3 · 반응형</div>
+                </div>
+                <div class="pro_sec1_box pro_sec1_box3">
+                    <div class="pro_sec1_box_img"><a href=""></a></div>
+                    <div class="pro_sec1_box_text">리액트 사이트 리뉴얼</div>
+                    <div class="pro_sec1_box_subtext">WEB | 퍼블리싱 · REACT · 반응형</div>
+                </div>
+                <div class="pro_sec1_box pro_sec1_box4">
+                    <div class="pro_sec1_box_img"></div>
+                    <div class="pro_sec1_box_text">LIKE BEL 사이트 리뉴얼</div>
+                    <div class="pro_sec1_box_subtext">WEB | 퍼블리싱 · HTML5 · 반응형</div>
+                </div>
+                <div class="pro_sec1_box pro_sec1_box5">
+                    <div class="pro_sec1_box_img"><a href=""></a></div>
+                    <div class="pro_sec1_box_text">설빙 사이트 리뉴얼</div>
+                    <div class="pro_sec1_box_subtext">WEB | 퍼블리싱 · HTML5 · 반응형</div>
+                </div>
+                <div class="pro_sec1_box pro_sec1_box6">
+                    <div class="pro_sec1_box_img"><a href=""></a></div>
+                    <div class="pro_sec1_box_text">맥도날트 사이트 리뉴얼</div>
+                    <div class="pro_sec1_box_subtext">WEB | 퍼블리싱 · REACT · 반응형</div>
+                </div>
+            </div>
+        </section>  
+
+        <section id="project_sec2" class="pro_sec">
+            <h1 class="pro_title font_b">Banner Design</h1>
+            <!-- Slider main container -->
+            <div class="swiper banner-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper banner-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide banner_img banner_img1">Slide 1</div>
+                    <div class="swiper-slide banner_img banner_img2">Slide 2</div>
+                    <div class="swiper-slide banner_img banner_img3">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev banner-button"></div>
+                <div class="swiper-button-next banner-button"></div>
+            </div>
+        </section>
+
+        <section id="project_sec3" class="pro_sec">
+            <h1 class="pro_title font_b">Card News</h1>
+            
+            <div class="card-swiper-container" style="position: relative;">
+                <div class="swiper card-swiper">
+                    <div class="swiper-wrapper card-wrapper">
+                        <div class="swiper-slide card_img card_img1"></div>
+                        <div class="swiper-slide card_img card_img2"></div>
+                        <div class="swiper-slide card_img card_img3"></div>
+                        <div class="swiper-slide card_img card_img4"></div>
+                        <div class="swiper-slide card_img card_img5"></div>
+                        <div class="swiper-slide card_img card_img6"></div>
+                        <div class="swiper-slide card_img card_img7"></div>
+                        <div class="swiper-slide card_img card_img8"></div>
+                    </div>
+                </div>
+
+                <!-- 버튼을 swiper 바깥으로 빼고 absolute 위치 지정 -->
+                <div class="swiper-button-prev card-button" style="position: absolute; left: -40px; top: 50%; transform: translateY(-50%); z-index: 10;"></div>
+                <div class="swiper-button-next card-button" style="position: absolute; right: -40px; top: 50%; transform: translateY(-50%); z-index: 10;"></div>
+            </div>
+
+            <div class="card_textbox">
+                <p class="card_text1">예비고양이 집사들을 위한 가이드 카드뉴스</p>
+
+                    <p class="card_tool">Illustrator · Photoshop</p>
+                    <p class="card_text2 font_sb"><a href="https://leejinhee1106.github.io/CardNews/">View More</a></p>
+
+            </div>
+        </section>
+
+        <section id="project_sec4" class="pro_sec">
+            <h1 class="pro_title font_b">Made with Adobe</h1>
+            <div class="pro_sec4_box">
+
+                <div class="pro_videobox">
+                    <div class="pro_video1"> 
+                        <video src="./img/Intro_Video.mp4" controls></video>
+                    </div>
+                    <div class="pro_videodesc">
+                        <div class="videodesc_title">베스킨라빈스 모션그래픽</div>
+                        <div class="videodesc_subtitle">Graphics | Ps · Ai · Ae</div>
+                        <div class="videodesc_link"><a href="https://leejinhee1106.github.io/motion_beskin/" class="font_sb">View More</a></div>
+                    </div>
+                    <!-- 나중에 비디오 추가되면
+                    <div class="pro_video2"></div>
+                    <div class="pro_videodesc">
+                        <div class="videodesc_title"></div>
+                        <div class="videodesc_subtitle"></div>
+                        <div class="videodesc_link"><a href="#">View More</a></div>
+                    </div>
+                    -->
+                </div>
+
+                <div class="pro_sec4_detail sec4_box">
+                    <div class="sec4_detail_img sec4_box_img"><a href="#"></a></div>
+                    <div class="sec4_detail_text sec4_box_text">상세페이지 디자인 | Ps · Ai</div>
+                </div>
+                <div class="pro_sec5_mesh sec4_box">
+                    <div class="sec4_mesh_img sec4_box_img"><a href="./img/mesh.png"></a></div>
+                    <div class="sec4_mesh_text sec4_box_text">mesh Tool | Ai</div>
+                </div>
+                <div class="pro_sec6_uiux sec4_box">
+                    <div class="sec4_uiux_img sec4_box_img"><a href="#"></a></div>
+                    <div class="sec4_uiux_text sec4_box_text">UI/UX | Ps · Ai · Figma</div>
+                </div>
+            </div>
+        </section>
+    </div>  <!-- 섹션만 워랩 -->
+</div>   <!-- 섹션+섹션네비까지 워랩 --> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/slider.js"></script>
+</body>
+</html>

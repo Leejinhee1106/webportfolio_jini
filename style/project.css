@@ -1,0 +1,370 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Sarabun:wght@400;700&display=swap");
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 기본 본문용 */
+body {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 400;
+}
+
+/* 아주 두껍게 */
+.font_xb {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
+}
+
+/* 중간 굵기 */
+.font_b {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+}
+
+.font_sb {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+
+.font_css {
+  font-family: "GmarketSansMedium";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+  height: 100%;
+}
+
+::-moz-selection {
+  background-color: #6A8A6F; /* 배경색 (드래그한 영역의 색) */
+  color: #fff; /* 글자 색 */
+}
+
+::selection {
+  background-color: #6A8A6F; /* 배경색 (드래그한 영역의 색) */
+  color: #fff; /* 글자 색 */
+}
+
+/* 헤더 & 네비 */
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+header .logo {
+  width: 70px;
+  height: 70px;
+}
+header .logo a {
+  margin-left: 20px;
+  background: url(../img/logo.png);
+  background-size: cover;
+}
+header .navbar {
+  width: 100%;
+  display: flex;
+}
+header .navbar ul {
+  display: flex;
+  margin: 0 auto;
+}
+header .navbar ul li {
+  margin: 0 70px;
+  font-size: 20px;
+}
+
+.project-wrap {
+  margin: 0 10%;
+  padding-top: 80px;
+  display: flex;
+}
+.project-wrap .project-nav {
+  width: 10%;
+  position: fixed;
+  height: 100vh;
+}
+.project-wrap .project-nav ul {
+  margin-top: 50px;
+}
+.project-wrap .project-nav ul li {
+  width: 100%;
+  height: 50px;
+}
+.project-wrap .project-nav ul li a {
+  box-sizing: border-box;
+  padding: 10px 0 10px 30px;
+  background-color: #6A8A6F;
+  border-bottom: 1px solid rgba(52, 99, 58, 0.5);
+  color: #fff;
+  line-height: 30px;
+  transition: all 0.3s;
+}
+.project-wrap .project-nav ul li:first-child a {
+  border-radius: 20px 0 0 0;
+}
+.project-wrap .project-nav ul li:last-child a {
+  border-radius: 0 0 20px 0;
+  border-bottom: none !important;
+}
+.project-wrap .project-nav ul li a:hover {
+  background-color: #CBE0B9;
+  color: #34633a;
+}
+.project-wrap .project_secwrap {
+  margin-left: 15%;
+  width: 90%;
+}
+.project-wrap .project_secwrap .pro_sec {
+  margin-bottom: 100px;
+  scroll-margin-top: 120px;
+}
+.project-wrap .project_secwrap .pro_title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.project-wrap .project_secwrap #project_sec1 {
+  width: 100%;
+  margin-top: 50px;
+}
+.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box {
+  width: 33%;
+  height: 400px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box .pro_sec1_box_img {
+  width: 100%;
+  height: 300px;
+  background: #eeeeee;
+}
+.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box .pro_sec1_box_text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #222;
+}
+.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box .pro_sec1_box_subtext {
+  font-size: 14px;
+  color: #555;
+}
+.project-wrap .project_secwrap #project_sec2 {
+  width: 100%;
+}
+.project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-wrapper {
+  height: 500px;
+}
+.project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-wrapper .banner_img {
+  background-color: #eee;
+}
+.project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-button {
+  color: white;
+}
+.project-wrap .project_secwrap #project_sec3 {
+  width: 100%;
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper {
+  width: 90%;
+  height: 445px;
+  position: relative;
+  /* 배경 이미지 클래스 예시 */
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  /* 활성 슬라이드는 크게 */
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card-wrapper .card_img {
+  width: 400px !important; /* swiper가 내부적으로 width를 설정하므로 !important 필요 */
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.9);
+  opacity: 0.6;
+  overflow: visible;
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card-wrapper .swiper-slide-active {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img1 {
+  background-image: url("../img/card/card_1.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img2 {
+  background-image: url("../img/card/card_2.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img3 {
+  background-image: url("../img/card/card_3.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img4 {
+  background-image: url("../img/card/card_4.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img5 {
+  background-image: url("../img/card/card_5.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img6 {
+  background-image: url("../img/card/card_6.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img7 {
+  background-image: url("../img/card/card_7.png");
+}
+.project-wrap .project_secwrap #project_sec3 .card-swiper .card_img8 {
+  background-image: url("../img/card/card_8.jpg");
+}
+.project-wrap .project_secwrap #project_sec3 .card-button {
+  color: #34633a;
+}
+.project-wrap .project_secwrap #project_sec3 .card_textbox {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 440px;
+  height: 100px;
+  justify-content: center;
+}
+.project-wrap .project_secwrap #project_sec3 .card_textbox .card_text1 {
+  font-size: 24px;
+  color: #222;
+  font-weight: 600;
+}
+.project-wrap .project_secwrap #project_sec3 .card_textbox .card_tool {
+  font-size: 20px;
+  color: #555;
+}
+.project-wrap .project_secwrap #project_sec3 .card_textbox .card_text2 {
+  width: 130px;
+  height: 40px;
+  margin-top: 5px;
+}
+.project-wrap .project_secwrap #project_sec3 .card_textbox .card_text2 > a {
+  background: rgba(52, 99, 58, 0.9);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.project-wrap .project_secwrap #project_sec3 .card_textbox .card_text2 > a:hover {
+  background-color: #CBE0B9;
+  color: #333;
+  box-shadow: 0px 1px 3px #c7c7c7;
+}
+.project-wrap .project_secwrap #project_sec4 {
+  width: 100%;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_video1 {
+  width: 70%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  background-color: #6A8A6F;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_video1 video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_subtitle {
+  font-size: 20px;
+  color: #555;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_link {
+  width: 130px;
+  height: 40px;
+  margin-top: 5px;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_link > a {
+  background: rgba(52, 99, 58, 0.9);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_link > a:hover {
+  background-color: #CBE0B9;
+  color: #333;
+  box-shadow: 0px 1px 3px #c7c7c7;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_box {
+  width: 30%;
+  height: 400px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_box .sec4_box_img {
+  width: 100%;
+  height: 350px;
+  background-color: #eee;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_box .sec4_box_text {
+  font-size: 18px;
+  color: #222;
+  font-weight: 500;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_mesh_img {
+  background: url(../img/mesh2.png);
+}/*# sourceMappingURL=project.css.map */
