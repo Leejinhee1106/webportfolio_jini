@@ -166,6 +166,7 @@ header .navbar ul li {
   margin: 0 10%;
   padding-top: 80px;
   display: flex;
+  gap: 50px;
 }
 .project-wrap .project-nav {
   width: 10%;
@@ -201,7 +202,8 @@ header .navbar ul li {
 }
 .project-wrap .project_secwrap {
   margin-left: 15%;
-  width: 90%;
+  width: 75%;
+  box-sizing: border-box;
 }
 .project-wrap .project_secwrap .pro_sec {
   margin-bottom: 100px;
@@ -216,7 +218,7 @@ header .navbar ul li {
   margin-top: 50px;
 }
 .project-wrap .project_secwrap #project_sec1 .pub_boxes {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -227,6 +229,7 @@ header .navbar ul li {
   display: flex;
   justify-content: space-around;
   padding: 15px;
+  box-sizing: border-box;
   background-color: rgba(203, 224, 185, 0.5);
   border-radius: 20px;
 }
@@ -257,7 +260,7 @@ header .navbar ul li {
 }
 .project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright {
   width: 45%;
-  height: 300px;
+  height: 100%;
   background-color: white;
   padding: 0 20px;
   box-sizing: border-box;
@@ -297,38 +300,42 @@ header .navbar ul li {
 .project-wrap .project_secwrap #project_sec2 {
   width: 100%;
 }
+.project-wrap .project_secwrap #project_sec2 .banner-swiper {
+  width: 100%;
+}
 .project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-wrapper {
-  height: 450px;
+  height: 400px;
 }
 .project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-wrapper .banner_img {
-  height: 450px;
-  background-color: #eee;
+  height: 400px;
+  background-color: rgba(203, 224, 185, 0.5);
 }
 .project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-button {
-  color: white;
+  color: #fff;
 }
 .project-wrap .project_secwrap .banner_img1 {
   background: url(../img/banner/mbanner.png) no-repeat center;
-  background-size: contain;
+  background-size: cover;
 }
 .project-wrap .project_secwrap #project_sec3 {
   width: 100%;
+  height: auto;
 }
 .project-wrap .project_secwrap #project_sec3 .card-swiper {
-  width: 90%;
-  height: 445px;
+  width: 100%;
+  height: 420px;
   position: relative;
   /* 배경 이미지 클래스 예시 */
 }
 .project-wrap .project_secwrap #project_sec3 .card-swiper .card-wrapper {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 30px;
+  left: 40px;
   /* 활성 슬라이드는 크게 */
 }
 .project-wrap .project_secwrap #project_sec3 .card-swiper .card-wrapper .card_img {
-  width: 400px !important; /* swiper가 내부적으로 width를 설정하므로 !important 필요 */
-  height: 400px;
+  width: 360px !important; /* swiper가 내부적으로 width를 설정하므로 !important 필요 */
+  height: 360px !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -414,18 +421,17 @@ header .navbar ul li {
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px 10px;
+  justify-content: space-between;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_video1 {
-  width: 70%;
-  height: 600px;
-  overflow: hidden;
-  position: relative;
+  width: 65%;
+  height: 400px;
   background-color: #6A8A6F;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_video1 video {
@@ -436,7 +442,7 @@ header .navbar ul li {
   display: block;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -447,13 +453,13 @@ header .navbar ul li {
   color: #222;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_subtitle {
-  font-size: 20px;
+  font-size: 18px;
   color: #555;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_link {
   width: 130px;
   height: 40px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_videobox .pro_videodesc .videodesc_link > a {
   background: rgba(52, 99, 58, 0.9);
@@ -472,10 +478,8 @@ header .navbar ul li {
   box-shadow: 0px 1px 3px #c7c7c7;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_box {
-  width: 30%;
-  height: 400px;
-  padding: 10px;
-  box-sizing: border-box;
+  width: 350px;
+  height: 350px;
 }
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_box .sec4_box_img {
   width: 100%;
@@ -487,6 +491,13 @@ header .navbar ul li {
   color: #222;
   font-weight: 500;
 }
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_detail_img {
+  background-color: #eee;
+}
 .project-wrap .project_secwrap #project_sec4 .pro_sec4_box .sec4_mesh_img {
-  background: url(../img/mesh2.png);
+  background: url(../img/mesh2.png) center center;
+  background-size: cover;
+}
+.project-wrap .project_secwrap #project_sec4 .pro_sec4_box .pro_sec6_uiux {
+  background: #eee;
 }/*# sourceMappingURL=project.css.map */
