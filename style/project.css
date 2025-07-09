@@ -1,15 +1,63 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Sarabun:wght@400;700&display=swap");
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-family: "PyeojinGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Paperlogy 3";
+  src: url("Paperlogy-3Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 4";
+  src: url("Paperlogy-4Regular.woff2") format("woff2");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 5";
+  src: url("./fonts/Paperlogy-5Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 6";
+  src: url("./fonts/Paperlogy-6SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 7";
+  src: url("./fonts/Paperlogy-7Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 8";
+  src: url("./fonts/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
 }
 /* 기본 본문용 */
 body {
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
+  font-family: "Paperlogy 5";
+  line-height: 1.6;
 }
 
 /* 아주 두껍게 */
@@ -29,8 +77,24 @@ body {
   font-weight: 600;
 }
 
-.font_css {
-  font-family: "GmarketSansMedium";
+.font_csseb {
+  font-family: "Paperlogy 8";
+}
+
+.font_cssb {
+  font-family: "Paperlogy 7";
+}
+
+.font_csssb {
+  font-family: "Paperlogy 6";
+}
+
+.font_cssm {
+  font-family: "Paperlogy 5";
+}
+
+.font_cssr {
+  font-family: "Paperlogy 4";
 }
 
 html {
@@ -151,43 +215,101 @@ header .navbar ul li {
   width: 100%;
   margin-top: 50px;
 }
-.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes {
-  width: 100%;
+.project-wrap .project_secwrap #project_sec1 .pub_boxes {
+  width: 80%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
 }
-.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box {
-  width: 33%;
-  height: 400px;
-  padding: 15px;
-  box-sizing: border-box;
-}
-.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box .pro_sec1_box_img {
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox {
   width: 100%;
   height: 300px;
-  background: #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: rgba(203, 224, 185, 0.5);
+  border-radius: 20px;
 }
-.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box .pro_sec1_box_text {
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .publeft {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .publeft .pub_img {
+  width: 500px;
+  height: 300px;
+  background: url(../img/publishing/pro_antenna.png) center center;
+  background-size: cover;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .publeft .pub_textbox {
+  text-align: center;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .publeft .pub_textbox .pub_title {
   font-size: 20px;
-  font-weight: 500;
-  margin-top: 10px;
   color: #222;
 }
-.project-wrap .project_secwrap #project_sec1 .pro_sec1_boxes .pro_sec1_box .pro_sec1_box_subtext {
-  font-size: 14px;
-  color: #555;
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .publeft .pub_textbox .pub_subtext {
+  font-size: 16px;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright {
+  width: 45%;
+  height: 300px;
+  background-color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright .pubr_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright .pubr_text .pubr_concept {
+  font-size: 22px;
+  color: #182e1a;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright .pubr_text .pubr_fc .pub_color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 30%;
+  margin-left: 5px;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright .pubr_text .pubr_desc > a {
+  font-size: 24px;
+  color: #182e1a;
+  text-align: center;
+}
+.project-wrap .project_secwrap #project_sec1 .pub_boxes .pubbox .pubright .pubr_text .pubr_desc > a:hover {
+  color: #6A8A6F;
+}
+.project-wrap .project_secwrap .pub_color1 {
+  background-color: #31ceee;
+}
+.project-wrap .project_secwrap .pub_color2 {
+  background-color: #8a75b8;
 }
 .project-wrap .project_secwrap #project_sec2 {
   width: 100%;
 }
 .project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-wrapper {
-  height: 500px;
+  height: 450px;
 }
 .project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-wrapper .banner_img {
+  height: 450px;
   background-color: #eee;
 }
 .project-wrap .project_secwrap #project_sec2 .banner-swiper .banner-button {
   color: white;
+}
+.project-wrap .project_secwrap .banner_img1 {
+  background: url(../img/banner/mbanner.png) no-repeat center;
+  background-size: contain;
 }
 .project-wrap .project_secwrap #project_sec3 {
   width: 100%;

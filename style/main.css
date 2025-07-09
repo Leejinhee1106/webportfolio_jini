@@ -1,15 +1,63 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Sarabun:wght@400;700&display=swap");
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-family: "PyeojinGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2504-1@1.0/PyeojinGothic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Paperlogy 3";
+  src: url("Paperlogy-3Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 4";
+  src: url("Paperlogy-4Regular.woff2") format("woff2");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 5";
+  src: url("./fonts/Paperlogy-5Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 6";
+  src: url("./fonts/Paperlogy-6SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 7";
+  src: url("./fonts/Paperlogy-7Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy 8";
+  src: url("./fonts/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Paperlogy-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2") format("woff2");
+  font-weight: 800;
   font-style: normal;
 }
 /* 기본 본문용 */
 body {
-  font-family: "Sarabun", sans-serif;
-  font-weight: 400;
+  font-family: "Paperlogy 5";
+  line-height: 1.6;
 }
 
 /* 아주 두껍게 */
@@ -29,8 +77,24 @@ body {
   font-weight: 600;
 }
 
-.font_css {
-  font-family: "GmarketSansMedium";
+.font_csseb {
+  font-family: "Paperlogy 8";
+}
+
+.font_cssb {
+  font-family: "Paperlogy 7";
+}
+
+.font_csssb {
+  font-family: "Paperlogy 6";
+}
+
+.font_cssm {
+  font-family: "Paperlogy 5";
+}
+
+.font_cssr {
+  font-family: "Paperlogy 4";
 }
 
 html {
@@ -153,6 +217,7 @@ a {
   width: 510px;
   height: 350px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 .main-wrap .main-container #sec2 .sec2_textbox .sec2_title {
   font-size: 32px;
@@ -322,40 +387,40 @@ a {
   margin-top: 10px;
 }
 .main-wrap .main-container #sec4 .card .html-icon {
-  background-image: url("../img/skill1.svg");
+  background-image: url("../img/skill/skill1.svg");
 }
 .main-wrap .main-container #sec4 .card .vue-icon {
-  background-image: url("../img/skill11.png");
+  background-image: url("../img/skill/skill11.png");
 }
 .main-wrap .main-container #sec4 .card .react-icon {
-  background-image: url("../img//skill12_3.png");
+  background-image: url("../img/skill/skill12_3.png");
 }
 .main-wrap .main-container #sec4 .card .css-icon {
-  background-image: url("../img/skill2.svg");
+  background-image: url("../img/skill/skill2.svg");
 }
 .main-wrap .main-container #sec4 .card .js-icon {
-  background-image: url("../img/skill3.svg");
+  background-image: url("../img/skill/skill3.svg");
 }
 .main-wrap .main-container #sec4 .card .bootstrap-icon {
-  background-image: url("../img/skill5.svg");
+  background-image: url("../img/skill/skill5.svg");
 }
 .main-wrap .main-container #sec4 .card .swiper-icon {
-  background-image: url("../img/skill_swiper.svg");
+  background-image: url("../img/skill/skill_swiper.svg");
 }
 .main-wrap .main-container #sec4 .card .jquery-icon {
-  background-image: url("../img/skill8.svg");
+  background-image: url("../img/skill/skill8.svg");
 }
 .main-wrap .main-container #sec4 .card .figma-icon {
-  background-image: url("../img/skill4.svg");
+  background-image: url("../img/skill/skill4.svg");
 }
 .main-wrap .main-container #sec4 .card .ps-icon {
-  background-image: url("../img/skill6.svg");
+  background-image: url("../img/skill/skill6.svg");
 }
 .main-wrap .main-container #sec4 .card .ai-icon {
-  background-image: url("../img/skill7.svg");
+  background-image: url("../img/skill/skill7.svg");
 }
 .main-wrap .main-container #sec4 .card .ae-icon {
-  background-image: url("../img/skill13.svg");
+  background-image: url("../img/skill/skill13.svg");
 }
 .main-wrap .main-container .swiper-wrapper {
   transition-timing-function: linear !important;
@@ -389,61 +454,68 @@ a {
   margin: 20px 0;
 }
 .main-wrap .main-container #sec5 .sec5_boxes {
+  width: 100%;
+  height: 500px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 50px;
 }
 .main-wrap .main-container #sec5 .sec5_boxes .sec5_box {
-  width: 500px;
-  height: 400px;
-  padding: 20px;
-  box-sizing: border-box;
+  width: 25%;
+  height: 500px;
+  padding: 20px 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 15px;
+  background-color: #CBE0B9;
+  border-radius: 0 30px 0 30px;
 }
-.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .box_img {
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_image-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_image-wrapper img {
+  height: auto;
   width: 100%;
-  height: 300px;
-  background: #dadada;
+  transition: transform 1s ease-in;
 }
-.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .box_img1 {
-  background: url(../img/antenna_pc.png) center center;
-  background-size: cover;
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_image-wrapper:hover img {
+  transform: translateY(-40%);
 }
-.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .box_img2 {
-  background: url(../img/medream_pc.png) center center;
-  background-size: cover;
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
-.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .box_img3 {
-  background: url(../img/likebel_pc.png) center center;
-  background-size: cover;
-}
-.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .box_text {
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_text-wrapper .box_text {
+  color: #1F1F1F;
   font-size: 20px;
-  margin-top: 10px;
-  font-weight: 500;
-  color: #222;
 }
-.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .box_sebtext {
-  font-size: 14px;
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_text-wrapper .box_subtext {
   color: #555;
 }
-.main-wrap .main-container #sec5 .sec5_link {
-  width: 200px;
-  height: 60px;
-  margin: 0 auto;
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_box .sec5_text-wrapper .box_page > a {
+  color: #496B3B;
+  font-weight: 600;
 }
-.main-wrap .main-container #sec5 .sec5_link a {
-  background: #89bb92;
-  border-radius: 0 20px 0 20px;
-  color: #fff;
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_link {
+  width: 10%;
+}
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_link a {
+  color: #1E2D3A;
+  border: 2px solid #CBE0B9;
+  padding: 10px;
   text-align: center;
-  line-height: 60px;
-  font-size: 24px;
-  box-shadow: 0px 1px 3px #333;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.main-wrap .main-container #sec5 .sec5_boxes .sec5_link a:hover {
+  background-color: #CBE0B9;
 }
 .main-wrap .main-container #sec6 {
   width: 80%;

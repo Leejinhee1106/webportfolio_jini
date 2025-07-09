@@ -91,13 +91,14 @@
                 width: 600px;
                 height: 550px;
                 background: url(../img/sec2_img1.png) no-repeat;
-                background-size: cover;   
+                background-size: cover;  
             }
 
             .sec2_textbox {
                 width: 510px;
                 height: 350px;
                 box-sizing: border-box;
+                margin-bottom: 20px;
 
                 .sec2_title {
                     font-size: 32px;
@@ -283,20 +284,20 @@
             }
 
             // 예시: 각 기술에 맞는 아이콘 클래스
-            .html-icon { background-image: url('../img/skill1.svg'); }
-            .vue-icon { background-image: url('../img/skill11.png'); }
-            .react-icon { background-image: url('../img//skill12_3.png'); }
-            .css-icon { background-image: url('../img/skill2.svg'); }
-            .js-icon { background-image: url('../img/skill3.svg'); }
+            .html-icon { background-image: url('../img/skill/skill1.svg'); }
+            .vue-icon { background-image: url('../img/skill/skill11.png'); }
+            .react-icon { background-image: url('../img/skill/skill12_3.png'); }
+            .css-icon { background-image: url('../img/skill/skill2.svg'); }
+            .js-icon { background-image: url('../img/skill/skill3.svg'); }
 
-            .bootstrap-icon { background-image: url('../img/skill5.svg'); }
-            .swiper-icon { background-image: url('../img/skill_swiper.svg'); }
-            .jquery-icon { background-image: url('../img/skill8.svg'); }
+            .bootstrap-icon { background-image: url('../img/skill/skill5.svg'); }
+            .swiper-icon { background-image: url('../img/skill/skill_swiper.svg'); }
+            .jquery-icon { background-image: url('../img/skill/skill8.svg'); }
 
-            .figma-icon { background-image: url('../img/skill4.svg'); }
-            .ps-icon { background-image: url('../img/skill6.svg'); }
-            .ai-icon { background-image: url('../img/skill7.svg'); }
-            .ae-icon { background-image: url('../img/skill13.svg'); }
+            .figma-icon { background-image: url('../img/skill/skill4.svg'); }
+            .ps-icon { background-image: url('../img/skill/skill6.svg'); }
+            .ai-icon { background-image: url('../img/skill/skill7.svg'); }
+            .ae-icon { background-image: url('../img/skill/skill13.svg'); }
             }
         }
         // swiper css
@@ -325,76 +326,79 @@
 
 
         #sec5 {
-            width: 80%;
-            padding-top: 80px;
-            margin: 0 auto;
-            .sec5_title{
+        width: 80%;
+        padding-top: 80px;
+        margin: 0 auto;
+
+            .sec5_title {
                 font-size: 32px;
                 margin: 20px 0;
             }
-            .sec5_boxes{
+
+            .sec5_boxes {
+                width: 100%;
+                height: 500px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
-                margin-bottom: 20px;
-                .sec5_box{
-                    width: 500px;
-                    height: 400px;
-                    padding: 20px;
-                    box-sizing: border-box;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .box_img{
+                margin-top: 50px;
+
+                .sec5_box {
+                width: 25%;
+                height: 500px;
+                padding: 20px 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                background-color: #CBE0B9;
+                border-radius: 0 30px 0 30px;
+
+                    .sec5_image-wrapper {
+                        width: 90%;
+                        margin: 0 auto;
+                        height: 400px;
+                        overflow: hidden;
+                        position: relative;
+
+                        img {
+                        height: auto;
                         width: 100%;
-                        height: 300px;
-                        background: #dadada;
+                        transition: transform 1s ease-in;
+                        }
+
+                        &:hover img {
+                        transform: translateY(-40%);
+                        }
                     }
-                    .box_img1 {
-                        background: url(../img/antenna_pc.png) center center;
-                        background-size:cover;
-                    }
-                    .box_img2 {
-                        background: url(../img/medream_pc.png) center center;
-                        background-size:cover; 
-                    }
-                    .box_img3 {
-                        background: url(../img/likebel_pc.png) center center;
-                        background-size:cover; 
-                    }
-                    .box_text{
+                    .sec5_text-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-items: center;
+                        .box_text {
+                        color: #1F1F1F;
                         font-size: 20px;
-                        margin-top: 10px;
-                        font-weight: 500;
-                        color: #222;
+                        }
+                        .box_subtext {color: #555;}
+                        .box_page > a{color: #496B3B; font-weight: 600;}
                     }
-                    .box_sebtext{
-                        font-size: 14px;
-                        color: #555;
+                }
+                .sec5_link {
+                    width: 10%;
+                    a{ 
+                        color: #1E2D3A;
+                        border: 2px solid #CBE0B9;
+                        padding: 10px;
+                        text-align: center;
+                        border-radius: 20px;
+                        transition: all 0.2s;
+                    }
+                    a:hover {
+                        background-color: #CBE0B9;
                     }
                 }
             }
-            .sec5_link{
-                width: 200px;
-                height: 60px;
-                margin: 0 auto;               
-                a{
-                    background: #89bb92;
-                    border-radius: 0 20px 0 20px;
-                    color: #fff;
-                    text-align: center;
-                    line-height: 60px;
-                    font-size: 24px;
-                    box-shadow: 0px 1px 3px #333;
-                }     
-            }
         }
-
-
-
-
-
 
         #sec6 {
             width: 80%;
