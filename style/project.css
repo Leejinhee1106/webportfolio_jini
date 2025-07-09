@@ -317,6 +317,10 @@ header .navbar ul li {
   background: url(../img/banner/mbanner.png) no-repeat center;
   background-size: cover;
 }
+.project-wrap .project_secwrap .banner_img2 {
+  background: url(../img/banner/megabanner.png) no-repeat center;
+  background-size: cover;
+}
 .project-wrap .project_secwrap #project_sec3 {
   width: 100%;
   height: auto;
